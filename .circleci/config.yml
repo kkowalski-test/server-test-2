@@ -1,0 +1,13 @@
+version: 2.1
+
+workflows:
+  ci:
+    jobs:
+      - test-job
+
+jobs:
+  test-job:
+    docker:
+      - image: buildpack-deps:trusty
+    steps:
+      - run: echo "hello world"
