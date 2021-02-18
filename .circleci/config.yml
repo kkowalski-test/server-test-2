@@ -10,4 +10,4 @@ jobs:
     machine: true
     resource_class: my-namespace/my-resource
     steps:
-      - run: echo "hello world6"
+      - run: echo "hello world7"
