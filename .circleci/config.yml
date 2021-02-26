@@ -8,6 +8,6 @@ workflows:
 jobs:
   test-job:
     machine: true
-    resource_class: my-namespace/my-resource
+    resource_class: my-namespace/my-rc
     steps:
       - run: echo "hello world10"
