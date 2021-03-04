@@ -11,3 +11,7 @@ jobs:
     resource_class: my-namespace/my-rc
     steps:
       - run: echo "hello world11"
+      - store_artifacts:
+          path: newfile.txt
+          destination: docs
+
