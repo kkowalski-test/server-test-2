@@ -10,6 +10,7 @@ jobs:
     machine: true
     resource_class: my-namespace/my-rc
     steps:
+      - checkout
       - run: echo "hello world11"
       - run: ls -l
       - store_artifacts:
