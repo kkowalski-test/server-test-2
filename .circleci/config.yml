@@ -14,4 +14,7 @@ jobs:
       - run: echo "hello world11" >> newfile.txt
       - run: ls -l
       - run: uname -a
+      - store_artifacts:
+          path: newfile.txt
+          destination: docs
 
