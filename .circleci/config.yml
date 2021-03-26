@@ -12,8 +12,7 @@ jobs:
     steps:
       - checkout
       - run: echo "hello world11"
+      - run: echo "hello world11" >> newfile.txt
       - run: ls -l
-      - store_artifacts:
-          path: newfile.txt
-          destination: docs
+      - run: uname -a
 
