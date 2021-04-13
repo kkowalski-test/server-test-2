@@ -10,6 +10,7 @@ jobs:
     machine: true
     resource_class: my-namespace/my-rc
     steps:
+      - checkout
       - run: echo "hello world111"
       - run: echo "hello world11" >> newfile.txt
       - run: ls -l
