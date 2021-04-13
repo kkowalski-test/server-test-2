@@ -18,4 +18,7 @@ jobs:
       - store_artifacts:
           path: newfile.txt
           destination: docs
+      - store_artifacts:
+          path: circleci_logo2.png
+          destination: logo
 
